@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #111;
+    background: #21e60754;
     color: white;
 }
 
@@ -16,20 +16,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: black;
+    background: rgb(54, 25, 25);
     position: sticky;
     top: 0;
 }
 
 nav a {
     color: white;
-    margin-left: 25px;
+    margin-left: 50px;
     text-decoration: none;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #25D366;
+    color: #0a0e0b;
 }
 
 /* HERO */
@@ -38,7 +38,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    background: linear-gradient(rgba(199, 133, 133, 0.6), rgba(0,0,0,0.6)),
     url('https://via.placeholder.com/1200x800') center/cover;
     text-align: center;
 }

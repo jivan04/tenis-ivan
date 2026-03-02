@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #21e60754;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
 }
 
@@ -19,6 +19,7 @@ header {
     background: rgb(54, 25, 25);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -26,10 +27,11 @@ nav a {
     margin-left: 50px;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #0a0e0b;
+    color: #25D366;
 }
 
 /* HERO */
@@ -38,8 +40,8 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(199, 133, 133, 0.6), rgba(0,0,0,0.6)),
-    url('https://via.placeholder.com/1200x800') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('images/hero.jpg') center/cover;
     text-align: center;
 }
 
@@ -55,7 +57,7 @@ nav a:hover {
     display: inline-block;
     padding: 12px 30px;
     background: #25D366;
-    color: black;
+    color: white;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -64,6 +66,7 @@ nav a:hover {
 
 .btn:hover {
     transform: scale(1.05);
+    background: #1ebe5d;
 }
 
 /* PRODUCTOS */
@@ -85,15 +88,19 @@ nav a:hover {
     width: 300px;
     border-radius: 15px;
     overflow: hidden;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.03);
 }
 
 .card img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
 .card h3 {
@@ -109,9 +116,15 @@ nav a:hover {
     margin-bottom: 20px;
     padding: 8px 20px;
     background: #25D366;
-    color: black;
+    color: white;
     border-radius: 20px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
 }
 
 /* CONTACTO */
@@ -127,7 +140,7 @@ nav a:hover {
     bottom: 20px;
     right: 20px;
     background: #25D366;
-    color: black;
+    color: white;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -136,7 +149,7 @@ nav a:hover {
     align-items: center;
     font-size: 28px;
     text-decoration: none;
-    box-shadow: 0 0 20px rgba(37,211,102,0.7);
+    box-shadow: 0 0 20px rgba(37,211,102, 0.7);
     animation: pulse 1.5s infinite;
 }
 
@@ -150,6 +163,10 @@ nav a:hover {
 @media(max-width: 768px){
     header {
         flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px;
     }
 
     .hero-content h1 {
